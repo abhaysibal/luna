@@ -23,6 +23,7 @@ if __name__ == "__main__":
         upload_only_when_stable=is_unstable,
         # docker_entry_script='sudo apt-get -qq update && sudo apt-get -qq install -y curl',
         stable_branch_pattern="stable/*")
+    exit()
 
     builder.add_common_builds(shared_option_name=name + ":shared", pure_c=False)
 
